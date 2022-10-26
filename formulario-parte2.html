@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Textarea</title>
+  </head>
+  <body>
+    <!--
+    <textarea>
+      Elemento de texto com mais de uma linha
+      Muito utilizado em textos maiores
+  -->
+    <form action="confirm.text" method="post">
+      <textarea></textarea>
+      <br />
+      <label for="message">Mensagem</label><br />
+      <textarea
+        id="message"
+        name="message"
+        cols="40"
+        rows="20"
+        minlength="10"
+        maxlength="100"
+        wrap="soft"
+      ></textarea>
+      <!--
+        optgroup
+          Elemenro utilizado para agrupar uma sequência
+          de seleções ou opções
+      -->
+      <br />
+      <br />
+      <label>Esolha seu professor</label>
+      <br />
+      <select name="prof" multiple size="5">
+        <optgroup label="Professores">
+          <option value="Luan" disabled>Luan</option>
+          <option value="Regis">Regis</option>
+          <option value="Jenifer">Jenifer</option>
+          <option value="Moacir">Moacir</option>
+        </optgroup>
+        <optgroup label="Cursos">
+          <option value="">Front-End</option>
+          <option value="">Back-End</option>
+          <option value="">Design UI/UXx</option>
+          <option value="">DevOps</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
